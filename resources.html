@@ -1,0 +1,161 @@
+---
+layout: default
+---
+
+<div class="container">
+     <h2>Software</h2>
+     <br>
+	 
+	 <h5>Most of the software and packages in developing phase are hosted on 
+	 <a href="https://github.com/PengyiYang/">https://github.com/PengyiYang/</a></h5>
+	 <br>
+	 
+	 <h3>R packages</h3>
+	 <ul>
+	 	
+	 	<li><font color="#8B0000"><b>AdaSampling</b></font> (<a href="https://CRAN.R-project.org/package=AdaSampling">https://CRAN.R-project.org/package=AdaSampling</a>)<br>
+     	Implements the adaptive sampling procedure, a framework for both positive unlabeled learning and learning with class label noise. 
+     	<br><br>
+     	Reference:<br>
+			<b><u>Yang, P.</u></b><sup>&dagger;</sup>, Ormerod, J., Liu, W., Ma, C., Zomaya, A., Yang, J. (2018) 
+			AdaSampling for positive-unlabeled and label noise learning with bioinformatics applications.
+			<b><i>IEEE Transactions on Cybernetics</b></i>, doi:10.1109/TCYB.2018.2816984
+			[<a href="http://www.maths.usyd.edu.au/u/pengyi/publication/AdaSampling_v11.pdf">PDF</a>],
+			[<a href="https://github.com/PengyiYang/AdaSampling">Repo</a>]
+     	</li><br>
+     	
+	 	
+     	<li><font color="#8B0000"><b>ClueR</b></font> (<a href="https://CRAN.R-project.org/package=ClueR">https://CRAN.R-project.org/package=ClueR</a>)<br>
+     	CLUster Evaluation (CLUE) is a computational method for identifying optimal number of clusters in a given 
+     	time-course dataset clustered by cmeans or kmeans algorithms and subsequently identify key kinases or 
+     	pathways from each cluster. Its implementation in R is called ClueR. 
+     	<br><br>
+     	Reference:<br>
+			<b><u>Yang, P.</b></u><sup>&dagger;</sup>, Zheng, X., Jayaswal, V., Hu, G., Yang, J. & Jothi, R. (2015). 
+			Knowledge-based analysis for detecting key signaling events from time-series phosphoproteomics data. 
+			<b><i>PLoS Computational Biology</i></b>, 11(8), e1004403.
+			[<a href="http://www.ncbi.nlm.nih.gov/pubmed/26252020">Pubmed</a>],
+			[<a href="http://www.maths.usyd.edu.au/u/pengyi/publication/knowledge-based kinase detection.pdf">PDF</a>]
+     	</li><br>
+     	
+     	<li><font color="#8B0000"><b>directPA</b></font> (<a href="https://cran.r-project.org/package=directPA">https://cran.r-project.org/package=directPA</a>)<br>
+     	Direction analysis is a set of tools designed to identify combinatorial effects of multiple treatments 
+     	and/or perturbations on pathways and kinases profiled by microarray, RNA-seq, proteomics, or phosphoproteomics.
+     	<br><br>
+     	Reference:<br>
+			<b><u>Yang, P.</b></u><sup>&#10018;</sup>, Patrick, E.<sup>&#10018;</sup>, Tan, S., Fazakerley, D., Burchfield, J., Gribben, C., Prior, M., James, D. & Yang, J. (2014). 
+			Direction pathway analysis of large-scale proteomics data reveals novel features of the insulin action pathway. 
+			<b><i>Bioinformatics</i></b>, 30(6), 808-814.
+			[<a href="http://www.ncbi.nlm.nih.gov/pubmed/24167158">Pubmed</a>],
+			[<a href="http://www.maths.usyd.edu.au/u/pengyi/publication/Direction.pdf">PDF</a>]
+     	</li>
+	 </ul>
+	 
+	 <h3>Shiny apps</h3>
+	 <ul>
+	 
+	 	<li><font color="#8B0000"><b>QCMAP</b></font> (<a href="http://shiny.maths.usyd.edu.au/QCMAP/">http://shiny.maths.usyd.edu.au/QCMAP/</a>)<br>
+	 	An interactive web tool for mass spectrometry instrument diagnosis and data quality control.
+	 	<br><br>
+		Reference:<br>
+		Kim, T., Chen, I., Parker, B., Humphrey, S., Crossett, B., Cordwell, S., <b><u>Yang, P.</b></u><sup>&dagger;</sup> & Yang, J<sup>&dagger;</sup>. (2019).
+		QCMAP: An Interactive Web-Tool for Performance Diagnosis and Prediction of LC-MS Systems.
+		<b><i>Proteomics</b></i>, <a href="https://doi.org/10.1002/pmic.201900068">https://doi.org/10.1002/pmic.201900068</a>
+	 	</li><br>
+	 	
+	 	<li><font color="#8B0000"><b>KinasePA</b></font> (<a href="http://shiny.maths.usyd.edu.au/KinasePA">http://shiny.maths.usyd.edu.au/KinasePA</a>)<br>
+     	Kinase perturbation analysis (KinasePA) is a web tool that allows you to identify key kinases that are 
+     	perturbed in two treatments compared to control conditions (such as basal or unstimulated conditions).
+        <br><br>
+        Description: <br>
+     	The input data should be a csv file separated by comma. The rows of the data file are phosphorylation 
+     	sites and the columns are treatment1 vs control and treatment2 vs control. The values of the data file 
+     	should be log2 fold changes. Here is an example <a href="http://www.maths.usyd.edu.au/u/pengyi/software/KinasePA/HEK.csv">File</a>
+     	<br><br>
+     	KinasePA has also been incorporated into "directPA" R package. Install the package and find out more:<br>
+     	install.packages("directPA")
+     	<br><br>
+     	Reference:<br>
+     	Yang, P., Patrick, E., Humphrey, S., Ghazanfar, S., James, D., Jothi, R. & Yang, J. (2016). 
+     	KinasePA: Phosphoproteomics data annotation using hypothesis driven kinase perturbation analysis. 
+     	<b><i>Proteomics</b></i>, 16(13), 1868-1871
+     	[<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5027648/">full text</a>]
+     	</li>
+     </ul>
+     	
+     <h3>Standalone</h3>
+     <ul>
+     	<li><font color="#8B0000"><b>PUEL</b></font> (<a href="https://github.com/PengyiYang/KSP-PUEL">https://github.com/PengyiYang/KSP-PUEL</a>)<br>
+     	PUEL is an implementation of positive-unlabeled ensemble learning model for kinase-substrate prediction using
+     	kinase recognition motifs and dynamic phosphoproteomics data.
+     	<br><br>
+     	Prediction results for Akt, mTOR, AMPK, and ERK from different organisms using large-scale phosphoproteomics data
+     	are available from <a href="http://www.maths.usyd.edu.au/u/pengyi/software/PUEL.html">here</a>.
+     	<br><br>
+     	Reference:<br>
+		<b><u>Yang, P.</b></u><sup>&dagger;</sup>, Humphrey, S., James, D., Yang, J. & Jothi, R.<sup>&dagger;</sup> (2016). 
+		Positive-unlabeled ensemble learning for kinase substrate prediction from dynamic phosphoproteomics data.
+		<b><i>Bioinformatics</i></b>, 32(2), 252-259.
+       	[<a href="http://www.ncbi.nlm.nih.gov/pubmed/26395771">Pubmed</a>], 
+       	[<a href="http://www.maths.usyd.edu.au/u/pengyi/publication/Bioinformatics2016positiveUnlabelLearning.pdf">PDF</a>],	
+     	</li>
+     	
+     	<br>
+     	<li><font color="#8B0000"><b>SSO</b></font> (<a href="http://www.maths.usyd.edu.au/u/pengyi/software/Sampling.html">http://www.maths.usyd.edu.au/u/pengyi/software/Sampling.html</a>)<br>
+     	Sample subset optimization (SSO) is a sampling technique that utilize an evolutionary algorithm to optimize sample subsets for learning from 
+     	imbalanced dataset. Please see more details in the reference below.
+     	<br><br>
+     	Reference:<br>
+     	<b><u>Yang, P.</b></u><sup>&dagger;</sup>, Yoo, P., Fernando, J., Zhou, B., Zhang, Z. & Zomaya, A. (2014). 
+			Sample subset optimization techniques for imbalanced and ensemble learning problems in bioinformatics applications. 
+			<b><i>IEEE Transactions on Cybernetics</i></b>, 44(3), 445-455.
+			[<a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6615954&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6615954">IEEE Xplore</a>]
+			[<a href="http://www.maths.usyd.edu.au/u/pengyi/publication/SSO for imbalanced and ensemble learning.pdf">PDF</a>]
+ 	</ul>
+	
+	
+	<h2>Projects hosted on Google Code</h2>
+	<ul>
+		<li>Legacy version of sample subset optimization package<br> 
+		<a href="https://code.google.com/p/sample-subset-optimization/">https://code.google.com/p/sample-subset-optimization</a><br><br>
+		</li>
+		
+		<li>A machine learning algorithm in Java for protein inference<br>
+		<a href="http://code.google.com/p/re-fraction/">http://code.google.com/p/re-fraction</a><br><br>
+		</li>
+		
+		<li>A boosted learning algorithm in Java for peptide filtering<br>
+		<a href="http://code.google.com/p/self-boosted-percolator/">http://code.google.com/p/self-boosted-percolator</a><br><br>
+		</li>
+		
+		<li>A parallel genetic algorithm in Java for SNP interaction detection<br>
+		<a href="http://code.google.com/p/genetic-ensemble-snpx/">http://code.google.com/p/genetic-ensemble-snpx</a><br><br>
+		</li>
+		
+		<li>An ensemble algorithm in Perl for SNP interaction filtering<br>
+		<a href="http://code.google.com/p/ensemble-of-filters/">http://code.google.com/p/ensemble-of-filters</a><br><br>
+		</li>
+		
+		<li>An open source mass spectrometry analysis pipeline in R<br>
+		<a href="http://code.google.com/p/ocap/">http://code.google.com/p/ocap</a><br><br>
+		</li>
+		
+		<li>A dynamic wavelet package in C/C++ for mass spectrum modeling<br>
+		<a href="http://code.google.com/p/dywave/DyWave/">http://code.google.com/p/dywave/DyWave</a><br><br>
+		</li>
+			
+		<li>A particle swarm optimisation algorithm in Java for imbalanced data sampling<br>
+		<a href="http://code.google.com/p/imbalanced-data-sampling/">http://code.google.com/p/imbalanced-data-sampling</a><br><br>
+		</li>	
+	</ul>
+
+
+	<h2>Other resources</h2>
+	<ul>
+		<li> Prediction results for Akt, mTOR, AMPK, and ERK from different organisms using large-scale phosphoproteomics data
+     	are available from <a href="http://www.maths.usyd.edu.au/u/pengyi/software/PUEL.html">here</a>.</li>
+     	
+	</ul>
+	
+</div>
+

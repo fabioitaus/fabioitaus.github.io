@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<!--
+<div class="content">
+	<div class="container">
+	    <img src="/images/Pengyi.jpg"/ alt="" >
+    	<h3>Title</h3>
+	    <p>Some Description</p>
+    </div>
+</div>
+
+<div class="content">
+    <img src="/images/Tom.png"/ alt="" >
+    <h3>Title</h3>
+    <p>Some Description</p>
+</div>
+-->
+
+<div class="people">
+    <div class="container">
+        
+        <h1 class="people">Lab Members</h1>
+
+        {% for person in site.data.people %}
+
+        <div class="person" col-md-1>
+            <img src="{{ person.photo }}" alt="photo" class="person-photo img-circle">
+
+            <h3 class="person">{{ person.name }}</h3>
+            <p class="person"><font color="#8B0000">{{ person.email }}</font>
+            <br>{{ person.role }}
+            <br>
+            <br>{{ person.program }}
+            <br><br><br>
+            </p>
+            <br>
+		</div>
+		<br>
+        {% endfor %}
+    </div>
+    <hr>
+</div>
+<div class="people">
+    <div class="container">
+        
+        <h1 class="people">Alumni</h1>
+
+        {% for person in site.data.alumni %}
+
+        <div class="person col-md-2 col-sm-2 col-xs-12">
+            <h3 class="person-role">{{ person.name }}</h3>
+            <p class="person-role">{{ person.role }}
+            <br>{{ person.lnp }}
+            <br>{{ person.other }}
+            <br>{{ person.email }}
+            </p>
+
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+</div>
