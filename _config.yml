@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Pengyi Yang Group
-email: pengyi.yang@sydney.edu.au
+title: Fabio Luciani Immunogenomics lab
+email: luciani@unsw.edu.au
 description: > # this means to ignore newlines until "baseurl:"
   The website of Fabio Luciani. UNSW Sydney.
 # baseurl: "" # the subpath of your site, e.g. /blog
@@ -26,3 +26,4 @@ paginate_path: "/news/:num/"
 gems:
   - jekyll-paginate
   - jekyll-seo-tag
+  
