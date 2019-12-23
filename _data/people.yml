@@ -1,0 +1,23 @@
+---
+- name: Fabio Luciani
+  photo: "/images/XX.jpg"
+  email: luciani@@unsw.edu.au
+  role: Group Leader; MHMRC CDF; <a
+  href="/pdf/Luciani-CV.pdf">CV</a>
+  program: The Luciani lab aims to XXXXX. We use a systems approach that combines computational methods and wetlab experiments to study XXXX.
+  
+- name: Jean Louis Palgen
+  photo: "/images/XX.png"
+  email: xx
+  role: PhD Student
+  program: Jean-Louis is a Postdoc working on xxx.
+  
+- name: Raymond Louis Kim
+  photo: "/images/XXX.png"
+  email: jieun.kim@sydney.edu.au
+  role: PhD Student
+  program: Ray is .  
+
+- name: If you are interested in joining our lab
+  role: Please email to <a href="mailto:luciani@@unsw.edu.au"> Fabio Luciani</a> to discuss potential research projects.
+  photo: "/images/Cat.png"
